@@ -33,12 +33,13 @@
     text-decoration:underline; margin-bottom:44px; }
 
   .card{ background:#fff; border:1px solid var(--line); border-radius:14px;
-    padding:26px 24px; margin-bottom:20px; display:flex; gap:18px; align-items:flex-start; }
-  .avatar img{ width:100%; height:100%; object-fit:cover; border-radius:50%; }
-  .avatar{ width:76px; height:76px; border-radius:50%; background:var(--cream);
-    border:1.5px dashed var(--gold); flex-shrink:0; display:flex; align-items:center;
-    justify-content:center; font-family:'Work Sans',sans-serif; font-size:11px;
-    color:#B0A99A; text-align:center; line-height:1.3; }
+    padding:26px 24px; margin-bottom:20px; display:flex; gap:18px; align-items:flex-start;
+    text-decoration:none; transition:border-color .2s, transform .2s; }
+  a.card:hover{ border-color:var(--gold); transform:translateY(-2px); }
+  .card-link{ font-size:13px; color:var(--gold); font-weight:600; margin:10px 0 0; }
+  .avatar img{ width:100%; height:100%; object-fit:cover; border-radius:10px; display:block; }
+  .avatar{ width:76px; height:96px; border-radius:10px; background:var(--cream);
+    flex-shrink:0; overflow:hidden; }
   .card-body{ flex:1; }
   .card-name{ font-family:'Spectral',serif; font-weight:600; font-size:19px;
     color:var(--navy-deep); margin:0 0 2px; }
@@ -63,34 +64,37 @@
     <a class="info-link" href="https://ifides.com.br/sobre-palestrantes">Como funciona ser palestrante FIDES →</a>
 
     <!-- CARD: ANDERSON -->
-    <div class="card">
+    <a class="card" href="palestrante-anderson.html">
       <div class="avatar"><img src="foto-anderson.jpg" alt="Anderson Silva"></div>
       <div class="card-body">
         <p class="card-name">Anderson Silva</p>
-        <p class="card-role">Gestão, Governança e Cultura</p>
-        <p class="card-bio">Mais de 20 anos de experiência em gestão na área da saúde. Hoje, conselheiro de líderes e empresas, fundador do Instituto FIDES.</p>
+        <p class="card-role">Fundador e Conselheiro</p>
+        <p class="card-bio">Fundador do Instituto FIDES. Mais de 20 anos em gestão na saúde, hoje dedicado à formação de líderes, unindo experiência empresarial e propósito.</p>
+        <p class="card-link">Ver perfil completo &#8594;</p>
       </div>
-    </div>
+    </a>
 
     <!-- CARD: WESLEY -->
-    <div class="card">
-      <div class="avatar"><img src="foto-wesley.jpg" alt="Wesley"></div>
+    <a class="card" href="palestrante-wesley.html">
+      <div class="avatar"><img src="foto-wesley.jpg" alt="Wesley Macieira"></div>
       <div class="card-body">
-        <p class="card-name">Wesley</p>
+        <p class="card-name">Wesley Macieira</p>
         <p class="card-role">Comunicação e Liderança via Arte</p>
-        <p class="card-bio">Wesley trabalha a comunicação e a liderança a partir da arte, ajudando pessoas e equipes a se expressarem com mais autenticidade e presença.</p>
+        <p class="card-bio">Professor, diretor e preparador de atores com 29 anos de teatro. Usa as técnicas da arte cênica para treinar a comunicação e a presença de pessoas e líderes.</p>
+        <p class="card-link">Ver perfil completo &#8594;</p>
       </div>
-    </div>
+    </a>
 
     <!-- CARD: ABIMAEL -->
-    <div class="card">
-      <div class="avatar"><img src="foto-abimael.jpg" alt="Abimael"></div>
+    <a class="card" href="palestrante-abimael.html">
+      <div class="avatar"><img src="foto-abimael.jpg" alt="Abimael Machado"></div>
       <div class="card-body">
-        <p class="card-name">Abimael</p>
-        <p class="card-role">IA Aplicada</p>
-        <p class="card-bio">Abimael leva para empresas e líderes uma visão prática de como aplicar inteligência artificial no dia a dia da gestão, sem complicação técnica.</p>
+        <p class="card-name">Abimael Machado</p>
+        <p class="card-role">IA Aplicada à Gestão, Produtividade e Eficiência Operacional</p>
+        <p class="card-bio">Especialista em IA aplicada e eficiência operacional. Mais de 20 anos em sistemas críticos, automação e projetos digitais, traduzindo tecnologia em resultado prático.</p>
+        <p class="card-link">Ver perfil completo &#8594;</p>
       </div>
-    </div>
+    </a>
 
     <a class="cta" href="https://wa.me/5512974036696" target="_blank" rel="noopener">
       Quero contratar um palestrante
